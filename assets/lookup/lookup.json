@@ -4,7 +4,7 @@
         "Men’s T-Shirt",
         "Women’s T-Shirt"
     ],
-    "products": [
+    "gridProducts": [
         {
             "id": 1,
             "name": "Black Crew Neck T-shirt",
@@ -31,6 +31,41 @@
         },
         {
             "id": 4,
+            "name": "Pink Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Women’s T-Shirt",
+            "decription":"Upgrade your everyday wardrobe with this premium Black Crew Neck T-shirt, designed for both comfort and timeless style.\n\nCrafted from soft, breathable cotton fabric, this t-shirt delivers a lightweight feel that keeps you comfortable throughout the day, whether you're heading out with friends, relaxing at home, or styling it for a casual streetwear look.\n\nThe relaxed fit and classic crew neck design create a clean and modern silhouette that suits every body type. Its versatile black color makes it an essential piece that pairs effortlessly with jeans, joggers, shorts, or layered outfits.\n\nThe high-quality stitching and durable fabric ensure long-lasting wear while maintaining its shape and softness after multiple washes.\n\nPerfect for daily wear, this t-shirt combines simplicity, elegance, and practicality in one must-have essential. Whether worn on its own or layered under jackets and hoodies, it offers a confident and minimal look suitable for every season.\n\nFeatures:\n• Soft and breathable premium fabric\n• Classic crew neck design\n• Relaxed and comfortable fit\n• Durable stitching for long-lasting use\n• Easy to style with any outfit\n• Ideal for casual, everyday, and streetwear looks",
+            "image": "assets//images/4.png"
+        }
+       
+    ],
+    "listProducts": [
+        {
+            "id": 5,
+            "name": "Black Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Men’s T-Shirt",
+            "decription":"Upgrade your everyday wardrobe with this premium Black Crew Neck T-shirt, designed for both comfort and timeless style.\n\nCrafted from soft, breathable cotton fabric, this t-shirt delivers a lightweight feel that keeps you comfortable throughout the day, whether you're heading out with friends, relaxing at home, or styling it for a casual streetwear look.\n\nThe relaxed fit and classic crew neck design create a clean and modern silhouette that suits every body type. Its versatile black color makes it an essential piece that pairs effortlessly with jeans, joggers, shorts, or layered outfits.\n\nThe high-quality stitching and durable fabric ensure long-lasting wear while maintaining its shape and softness after multiple washes.\n\nPerfect for daily wear, this t-shirt combines simplicity, elegance, and practicality in one must-have essential. Whether worn on its own or layered under jackets and hoodies, it offers a confident and minimal look suitable for every season.\n\nFeatures:\n• Soft and breathable premium fabric\n• Classic crew neck design\n• Relaxed and comfortable fit\n• Durable stitching for long-lasting use\n• Easy to style with any outfit\n• Ideal for casual, everyday, and streetwear looks",
+            "image": "assets//images/1.png"
+        },
+        {
+            "id": 6,
+            "name": "Black Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Women’s T-Shirt",
+            "decription":"Upgrade your everyday wardrobe with this premium Black Crew Neck T-shirt, designed for both comfort and timeless style.\n\nCrafted from soft, breathable cotton fabric, this t-shirt delivers a lightweight feel that keeps you comfortable throughout the day, whether you're heading out with friends, relaxing at home, or styling it for a casual streetwear look.\n\nThe relaxed fit and classic crew neck design create a clean and modern silhouette that suits every body type. Its versatile black color makes it an essential piece that pairs effortlessly with jeans, joggers, shorts, or layered outfits.\n\nThe high-quality stitching and durable fabric ensure long-lasting wear while maintaining its shape and softness after multiple washes.\n\nPerfect for daily wear, this t-shirt combines simplicity, elegance, and practicality in one must-have essential. Whether worn on its own or layered under jackets and hoodies, it offers a confident and minimal look suitable for every season.\n\nFeatures:\n• Soft and breathable premium fabric\n• Classic crew neck design\n• Relaxed and comfortable fit\n• Durable stitching for long-lasting use\n• Easy to style with any outfit\n• Ideal for casual, everyday, and streetwear looks",
+            "image": "assets//images/2.png"
+        },
+        {
+            "id": 7,
+            "name": "Pink Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Men’s T-Shirt",
+            "decription":"Upgrade your everyday wardrobe with this premium Black Crew Neck T-shirt, designed for both comfort and timeless style.\n\nCrafted from soft, breathable cotton fabric, this t-shirt delivers a lightweight feel that keeps you comfortable throughout the day, whether you're heading out with friends, relaxing at home, or styling it for a casual streetwear look.\n\nThe relaxed fit and classic crew neck design create a clean and modern silhouette that suits every body type. Its versatile black color makes it an essential piece that pairs effortlessly with jeans, joggers, shorts, or layered outfits.\n\nThe high-quality stitching and durable fabric ensure long-lasting wear while maintaining its shape and softness after multiple washes.\n\nPerfect for daily wear, this t-shirt combines simplicity, elegance, and practicality in one must-have essential. Whether worn on its own or layered under jackets and hoodies, it offers a confident and minimal look suitable for every season.\n\nFeatures:\n• Soft and breathable premium fabric\n• Classic crew neck design\n• Relaxed and comfortable fit\n• Durable stitching for long-lasting use\n• Easy to style with any outfit\n• Ideal for casual, everyday, and streetwear looks",
+            "image": "assets//images/3.png"
+        },
+        {
+            "id": 8,
             "name": "Pink Crew Neck T-shirt",
             "price": 200.0,
             "category": "Women’s T-Shirt",

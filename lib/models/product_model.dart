@@ -29,14 +29,20 @@ class Product {
 
 class LookupData {
   final List<String> categories;
-  final List<Product> products;
+  final List<Product> gridProducts;
+  final List<Product> listProducts;
 
-  LookupData({required this.categories, required this.products});
+  LookupData({required this.categories, required this.gridProducts, required this.listProducts});
 
   factory LookupData.fromJson(Map<String, dynamic> json) {
     return LookupData(
       categories: List<String>.from(json['categories']),
-      products: (json['products'] as List).map((i) => Product.fromJson(i)).toList(),
+      gridProducts: (json['gridProducts'] as List)
+          .map((i) => Product.fromJson(i))
+          .toList(),
+      listProducts: (json['listProducts'] as List)
+          .map((i) => Product.fromJson(i))
+          .toList(),
     );
   }
 }

@@ -6,6 +6,7 @@ import '../../core/extensions/widget_extensions.dart';
 import 'widgets/category_clip.dart';
 import 'widgets/home_banner.dart';
 import 'widgets/home_product_grid_card.dart';
+import 'widgets/home_product_list_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -84,24 +85,57 @@ class _HomePageState extends State<HomePage> {
                 ).paddingSymmetric(horizontal: 20, vertical: 10),
               ),
               SliverGrid.builder(
+                    gridDelegate:
+                        const SliverGridDelegateWithMaxCrossAxisExtent(
+                          maxCrossAxisExtent: 300,
+                          mainAxisSpacing: 10,
+                          crossAxisSpacing: 10,
+                          childAspectRatio: .6,
+                        ),
+                    itemCount: controller.gridProducts.length,
+
+                    itemBuilder: (context, index) {
+                      return HomeProductGridCard(
+                        onTap: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => ProductDetailsPage(
+                              product: controller.gridProducts[index],
+                            ),
+                          ),
+                        ),
+                        product: controller.gridProducts[index],
+                      );
+                    },
+                  )
+                  .sliverPaddingSymmetric(horizontal: 20)
+                  .sliverPaddingOnly(bottom: 20),
+
+              // Products list
+              SliverToBoxAdapter(
+                child: Text(
+                  'Products List',
+                  style: context.textTheme.headlineSmall,
+                ).paddingSymmetric(horizontal: 20, vertical: 10),
+              ),
+              SliverGrid.builder(
                 gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                  maxCrossAxisExtent: 300,
+                  maxCrossAxisExtent: 500,
                   mainAxisSpacing: 10,
                   crossAxisSpacing: 10,
-                  childAspectRatio: .6,
+                  childAspectRatio: 5,
                 ),
-                itemCount: controller.products.length,
+                itemCount: controller.listProducts.length,
 
                 itemBuilder: (context, index) {
-                  return HomeProductGridCard(
+                  return HomeProductListCard(
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => ProductDetailsPage(
-                          product: controller.products[index],
+                          product: controller.listProducts[index],
                         ),
                       ),
                     ),
-                    product: controller.products[index],
+                    product: controller.listProducts[index],
                   );
                 },
               ).sliverPaddingSymmetric(horizontal: 20),

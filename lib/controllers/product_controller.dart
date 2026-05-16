@@ -7,8 +7,19 @@ class DataController extends ChangeNotifier {
   bool _isLoading = false;
   String _selectedCategory = 'All';
 
-  List<Product> get products {
-    var result = _data?.products ?? [];
+  List<Product> get gridProducts {
+    var result = _data?.gridProducts ?? [];
+    return result
+        .where(
+          (element) =>
+              _selectedCategory == "All" ||
+              element.category == _selectedCategory,
+        )
+        .toList();
+  }
+
+  List<Product> get listProducts {
+    var result = _data?.listProducts ?? [];
     return result
         .where(
           (element) =>
