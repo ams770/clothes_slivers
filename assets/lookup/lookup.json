@@ -1,0 +1,42 @@
+{
+    "categories":[
+        "All",
+        "Men’s T-Shirt",
+        "Women’s T-Shirt"
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Black Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Men’s T-Shirt",
+            "decription":"A comfortable and stylish t-shirt for everyday wear.",
+            "image": "assets//images/1.png"
+        },
+        {
+            "id": 2,
+            "name": "Black Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Women’s T-Shirt",
+            "decription":"A comfortable and stylish t-shirt for everyday wear.",
+            "image": "assets//images/2.png"
+        },
+        {
+            "id": 3,
+            "name": "Pink Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Men’s T-Shirt",
+            "decription":"A comfortable and stylish t-shirt for everyday wear.",
+            "image": "assets//images/3.png"
+        },
+        {
+            "id": 4,
+            "name": "Pink Crew Neck T-shirt",
+            "price": 200.0,
+            "category": "Women’s T-Shirt",
+            "decription":"A comfortable and stylish t-shirt for everyday wear.",
+            "image": "assets//images/4.png"
+        }
+       
+    ]
+}
