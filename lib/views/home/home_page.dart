@@ -35,16 +35,19 @@ class _HomePageState extends State<HomePage> {
         listenable: controller,
         builder: (context, _) {
           return CustomScrollView(
-            slivers: [              
+            slivers: [
               // Home Banner
               SliverSafeArea(
                 bottom: false,
-                sliver: SliverToBoxAdapter(
-                  child: HomeBanner(
-                    title: 'the most popular clothes today',
-                    offer: '50%\noff',
-                  ),
-                ).sliverPaddingSymmetric(horizontal: 20),
+                sliver:
+                    SliverToBoxAdapter(
+                          child: HomeBanner(
+                            title: 'the most popular clothes today',
+                            offer: '50%\noff',
+                          ),
+                        )
+                        .sliverPaddingSymmetric(horizontal: 20)
+                        .sliverPaddingOnly(top: 20),
               ),
 
               // Categories
