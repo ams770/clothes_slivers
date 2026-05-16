@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../controllers/product_controller.dart';
 import '../../core/extensions/widget_extensions.dart';
+import '../../models/product_model.dart';
 import 'widgets/category_clip.dart';
 import 'widgets/home_banner.dart';
 import 'widgets/home_product_grid_card.dart';
@@ -29,6 +30,14 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     controller.dispose();
     super.dispose();
+  }
+
+  void _navigateToProduct(Product product) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => ProductDetailsPage(product: product),
+      ),
+    );
   }
 
   @override
@@ -84,6 +93,7 @@ class _HomePageState extends State<HomePage> {
                   style: context.textTheme.headlineSmall,
                 ).paddingSymmetric(horizontal: 20, vertical: 10),
               ),
+
               SliverGrid.builder(
                     gridDelegate:
                         const SliverGridDelegateWithMaxCrossAxisExtent(
@@ -96,14 +106,9 @@ class _HomePageState extends State<HomePage> {
 
                     itemBuilder: (context, index) {
                       return HomeProductGridCard(
-                        onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => ProductDetailsPage(
-                              product: controller.gridProducts[index],
-                            ),
-                          ),
-                        ),
                         product: controller.gridProducts[index],
+                        onTap: () =>
+                            _navigateToProduct(controller.gridProducts[index]),
                       );
                     },
                   )
@@ -128,14 +133,9 @@ class _HomePageState extends State<HomePage> {
 
                 itemBuilder: (context, index) {
                   return HomeProductListCard(
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductDetailsPage(
-                          product: controller.listProducts[index],
-                        ),
-                      ),
-                    ),
                     product: controller.listProducts[index],
+                    onTap: () =>
+                        _navigateToProduct(controller.listProducts[index]),
                   );
                 },
               ).sliverPaddingSymmetric(horizontal: 20),
