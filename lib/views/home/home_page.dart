@@ -15,11 +15,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var controller = DataController();
+  late DataController controller;
+
   @override
   void initState() {
-    super.initState();
+    controller = DataController();
     controller.fetchProducts();
+    super.initState();
   }
 
   @override

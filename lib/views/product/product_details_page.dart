@@ -37,7 +37,6 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
       appBar: AppBar(
         // backgroundColor: Colors.transparent,
         // surfaceTintColor: Colors.transparent,
-
         systemOverlayStyle: SystemUiOverlayStyle.dark.copyWith(
           statusBarColor: Colors.transparent,
         ),
@@ -85,7 +84,6 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
             child: Text(
               widget.product.decription,
               style: context.theme.textTheme.labelLarge,
-              textAlign: .center,
             ),
           ).sliverPaddingSymmetric(horizontal: 20),
 
