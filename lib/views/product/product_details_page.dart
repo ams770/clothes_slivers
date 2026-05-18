@@ -119,6 +119,9 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
   }
 }
 
+
+
+
 class ProductImageHeaderDelegate extends SliverPersistentHeaderDelegate {
   ProductImageHeaderDelegate(this.context, {required this.product});
   final Product product;

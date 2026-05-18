@@ -2,6 +2,12 @@
 
 A professional Flutter application prototype showcasing advanced UI techniques, including sophisticated **Sliver** usage, MVC architecture, and custom widget extensions.
 
+## 📱 Screenshots
+
+| Home Page | Product Details Page |
+| :---: | :---: |
+| <img src="assets/screenshots/home.png" width="350" alt="Home Page" /> | <img src="assets/screenshots/product.png" width="350" alt="Product Details Page" /> |
+
 ---
 
 ## ✨ Features
